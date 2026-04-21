@@ -6,7 +6,7 @@
 
 **I build mobile products used by 500k+ people — and write about the architecture behind them.**
 
-*📍 India · 💼 Open to senior roles & freelance · ✍️ 5,000+ monthly readers*
+*📍 India · 💼 Open to senior roles & freelance · ✍️ 1,000+ monthly readers*
 
 <p>
   <a href="mailto:sushant18072002@gmail.com"><img src="https://img.shields.io/badge/Email-Contact_Me-EA4335?style=for-the-badge&logo=gmail&logoColor=white"></a>
@@ -98,7 +98,7 @@ The most dangerous bugs in production aren't crashes — they're silent state in
 
 ### Let's build something scalable together.
 
-4 years · 3 production apps · 500k+ installs · open to what's next.
+4 years · 15+ production apps · 500k+ installs · open to what's next.
 
 <a href="mailto:sushant18072002@gmail.com">
   <img src="https://img.shields.io/badge/Send_me_a_proposal-sushant18072002%40gmail.com-000?style=for-the-badge&logo=gmail&logoColor=white">
