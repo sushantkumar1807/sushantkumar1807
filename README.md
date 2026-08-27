@@ -8,7 +8,7 @@
   PORTFOLIO_URL:      https://sushantkumar.pages.dev
   MEDIUM_URL:         https://medium.com/@sushant18072002
   LINKEDIN_URL:       https://www.linkedin.com/in/sushant-kumar-147ba7190
-  EMAIL:              sushant18072002@gmail.com
+  EMAIL:              sushantkumar1807@gmail.com
   STATS_URL:          https://github-readme-stats.vercel.app
   STREAK_URL:         https://streak-stats.demolab.com   ← stable (not herokuapp)
   STATS_ENABLED:      true
@@ -27,11 +27,20 @@
 
 *You envision. I engineer. Translating abstract imagination into autonomous reality.*
 
+<!-- SEO: GitHub profiles are indexed by Google. The text below is human-readable and keyword-rich for search crawlers. -->
+<!--
+  Sushant Kumar — Full Stack Engineer, Mobile Engineer, AI Agent Engineer, India.
+  Specializing in: MCP (Model Context Protocol), Flutter offline-first architecture,
+  Spring Boot microservices, .NET, Node.js, React, Angular, PostgreSQL, Neo4j GraphRAG,
+  GitHub Actions CI/CD, AWS, Azure. Building autonomous AI agent infrastructure.
+  Portfolio: https://sushantkumar.pages.dev
+-->
+
 <p>
   <a href="https://sushantkumar.pages.dev">
     <img src="https://img.shields.io/badge/Portfolio-sushantkumar.pages.dev-f59e0b?style=for-the-badge&logo=cloudflare&logoColor=white" alt="Portfolio">
   </a>
-  <a href="mailto:sushant18072002@gmail.com">
+  <a href="mailto:sushantkumar1807@gmail.com">
     <img src="https://img.shields.io/badge/Email-Contact_Me-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email">
   </a>
   <a href="https://www.linkedin.com/in/sushant-kumar-147ba7190">
@@ -221,8 +230,8 @@ DevOps            GitHub Actions · Docker · AWS · Azure · CI/CD · OTA Deplo
   <img src="https://img.shields.io/badge/Full_Portfolio-sushantkumar.pages.dev-f59e0b?style=for-the-badge&logo=cloudflare&logoColor=white" alt="Portfolio">
 </a>
 &nbsp;
-<a href="mailto:sushant18072002@gmail.com">
-  <img src="https://img.shields.io/badge/Send_a_Proposal-sushant18072002%40gmail.com-000?style=for-the-badge&logo=gmail&logoColor=white" alt="Email">
+<a href="mailto:sushantkumar1807@gmail.com">
+  <img src="https://img.shields.io/badge/Send_a_Proposal-sushantkumar1807%40gmail.com-000?style=for-the-badge&logo=gmail&logoColor=white" alt="Email">
 </a>
 
 </div>

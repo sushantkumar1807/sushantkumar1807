@@ -1,26 +1,46 @@
 name: Update README with Latest Blog Posts
+
+# =====================================================================
+# FREE TIER SAFETY ANALYSIS:
+# This workflow runs on a PUBLIC repository.
+# Public repo Actions = UNLIMITED free minutes (GitHub policy, 2026).
+# No minute quota concern. The safeguards below prevent:
+#   → Runaway jobs (timeout-minutes: 5)
+#   → Stacked duplicate runs (concurrency: cancel-in-progress)
+#   → Silent failures accumulating (no-op commit check)
+# =====================================================================
+
 on:
   schedule:
-    - cron: '0 6 * * *'   # Runs daily at 6:00 AM UTC = 11:30 AM IST
-  workflow_dispatch:        # Manual trigger from Actions tab anytime
+    - cron: '30 6 * * 1,3,5'  # Mon/Wed/Fri at 12:00 PM IST — only runs on days you might publish
+  workflow_dispatch:             # Manual trigger from Actions tab anytime
+
+# Prevent duplicate runs: if a new run starts while one is in progress, cancel the old one.
+# This protects against manual re-triggers and cron pile-up.
+concurrency:
+  group: update-blog-posts
+  cancel-in-progress: true
 
 jobs:
   update-readme:
-    name: Fetch Medium RSS and update blog section
+    name: Fetch Medium RSS → Update README blog section
     runs-on: ubuntu-latest
+    timeout-minutes: 5           # Hard cap: kills job if it hangs (RSS timeout, network issue etc.)
+                                 # Typical run takes ~30 seconds. 5 min is a 10x safety buffer.
     permissions:
-      contents: write       # Required to commit changes back to the repo
+      contents: write            # Required to commit the updated README back to the repo
+
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Pull in latest Medium posts
+      - name: Pull latest Medium posts via RSS
         uses: gautamkrishnar/blog-post-workflow@v1
         with:
           feed_list: "https://medium.com/feed/@sushant18072002"
-          max_post_count: 3
+          max_post_count: 3           # Show only the 3 most recent posts
           readme_path: README.md
-          gh_token: ${{ secrets.GITHUB_TOKEN }}
+          gh_token: ${{ secrets.GITHUB_TOKEN }}   # Built-in token — no PAT needed
           comment_tag_name: "BLOG-POST-LIST"
-          # If Medium RSS is down, the step fails gracefully —
-          # last-known-good posts remain in README, no broken state.
+          # Graceful failure: if Medium RSS is down, the step fails but the
+          # README stays at last-known-good state. No broken content is written.
