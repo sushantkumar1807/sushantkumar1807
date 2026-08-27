@@ -37,7 +37,7 @@ jobs:
       - name: Pull latest Medium posts via RSS
         uses: gautamkrishnar/blog-post-workflow@v1
         with:
-          feed_list: "https://medium.com/feed/@sushant18072002"
+          feed_list: "https://medium.com/feed/@sushantkumar1807"
           max_post_count: 3           # Show only the 3 most recent posts
           readme_path: README.md
           gh_token: ${{ secrets.GITHUB_TOKEN }}   # Built-in token — no PAT needed
