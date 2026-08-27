@@ -1,0 +1,26 @@
+name: Update README with Latest Blog Posts
+on:
+  schedule:
+    - cron: '0 6 * * *'   # Runs daily at 6:00 AM UTC = 11:30 AM IST
+  workflow_dispatch:        # Manual trigger from Actions tab anytime
+
+jobs:
+  update-readme:
+    name: Fetch Medium RSS and update blog section
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write       # Required to commit changes back to the repo
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Pull in latest Medium posts
+        uses: gautamkrishnar/blog-post-workflow@v1
+        with:
+          feed_list: "https://medium.com/feed/@sushant18072002"
+          max_post_count: 3
+          readme_path: README.md
+          gh_token: ${{ secrets.GITHUB_TOKEN }}
+          comment_tag_name: "BLOG-POST-LIST"
+          # If Medium RSS is down, the step fails gracefully —
+          # last-known-good posts remain in README, no broken state.
