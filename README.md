@@ -167,9 +167,9 @@ DevOps            GitHub Actions · Docker · AWS · Azure · CI/CD · OTA Deplo
 ## ✍️ Latest Writing
 
 <!-- BLOG-POST-LIST:START -->
-<!-- Auto-updated daily at 11:30 AM IST via .github/workflows/update-blog-posts.yml -->
-- [The Death of Micro-Optimizations: Why Senior Flutter Developers Prioritize State Ownership in 2026](https://medium.com/@sushant18072002/the-death-of-micro-optimizations-why-senior-flutter-developers-prioritize-state-ownership-in-2026-a14078a8c7f0)
-- [Seamless Integration: Connecting Rasa NLU Chatbot with Flutter using WebSockets](https://medium.com/@sushant18072002/seamless-integration-connecting-rasa-nlu-chatbot-with-flutter-using-websockets-f7ca66623c0d)
+- [The Two-Layer Heresy: Why Senior Flutter Developers Are Deleting the Domain Layer](https://sushantkumar1807.medium.com/the-two-layer-heresy-why-senior-flutter-developers-are-deleting-the-domain-layer-d412ece43117?source=rss-95ac51764b8b------2)
+- [Stop Using GitHub Copilot Like a Junior Developer &lpar;The 2026 Setup&rpar;](https://sushantkumar1807.medium.com/i-used-github-copilot-wrong-for-a-year-heres-what-finally-made-it-click-31fd584a5657?source=rss-95ac51764b8b------2)
+- [I Killed 188 Skipped Frames in My Flutter App. Here’s the Autopsy](https://sushantkumar1807.medium.com/i-killed-188-skipped-frames-in-my-flutter-app-heres-the-autopsy-f507fda31c98?source=rss-95ac51764b8b------2)
 <!-- BLOG-POST-LIST:END -->
 
 ➡️ [All articles on Medium →](https://medium.com/@sushant18072002)
